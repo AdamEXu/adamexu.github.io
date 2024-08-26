@@ -1,8 +1,12 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="load.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="load.css" />
   </head>
   <body onload="onload()">
     <div class="loading" id="loading">
@@ -14,23 +18,30 @@
       </div>
     </div>
     <div class="content" id="content">
-      <div class="main-pane" id="main-pane">
-        <div class="pane">
+      <div class="main-pane" id="main-pane" onscroll="scroll_func();">
+        <div class="pane" id="slide1">
           <h1>Hello!</h1>
           <p>My name is Adam Xu</p>
-          <div class="scrolly-thingy">
-            <p>Scroll down for more!</p>
-          </div>
+          <div class="scrolly-thingy"></div>
         </div>
-        <div class="pane">
+        <div class="pane" id="slide2">
           <h1>Projects</h1>
           <p>Here are some of the projects I've worked on</p>
         </div>
       </div>
       <div class="side-pane" id="side-pane">
-        <h1>Temp</h1>
+        <div class="side-pane-viz wave" id="viz1" style="opacity: 1">
+          <img src="resources/wave.png" style="width: 40%; height: auto" />
+        </div>
+        <div class="side-pane-viz" id="viz2" style="opacity: 0">
+          <h1>Test Viz2</h1>
+        </div>
       </div>
     </div>
+    <div class="scroll-nag" id="scroll-nag">
+      <p>Scroll down for more!</p>
+    </div>
   </body>
+  <script src="noframework.waypoints.min.js"></script>
   <script src="scroll.js"></script>
 </html>
