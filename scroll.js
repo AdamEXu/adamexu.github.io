@@ -34,19 +34,27 @@ function onload() {
   }, 1800);
 }
 
+function hideall() {
+  document.getElementById("viz1").style.opacity = 0;
+  document.getElementById("viz2").style.opacity = 0;
+  document.getElementById("viz3").style.opacity = 0;
+  document.getElementById("viz4").style.opacity = 0;
+}
+
 var waypoint1 = new Waypoint({
   element: document.getElementById("slide1"),
   handler: function (direction) {
     if (direction == "up") {
       console.log("Switching frame to 1");
-      document.getElementById("viz2").style.opacity = 0;
+      hideall();
       setTimeout(function () {
+        hideall();
         document.getElementById("viz1").style.opacity = 1;
       }, 250);
     }
   },
   context: document.getElementById("main-pane"),
-  offset: -200,
+  offset: -400,
 });
 
 var waypoint2 = new Waypoint({
@@ -54,12 +62,77 @@ var waypoint2 = new Waypoint({
   handler: function (direction) {
     if (direction == "down") {
       console.log("Switching frame to 2");
-      document.getElementById("viz1").style.opacity = 0;
+      hideall();
       setTimeout(function () {
+        hideall();
         document.getElementById("viz2").style.opacity = 1;
       }, 250);
     }
   },
   context: document.getElementById("main-pane"),
-  offset: 200,
+  offset: 400,
+});
+
+var waypoint3 = new Waypoint({
+  element: document.getElementById("slide2"),
+  handler: function (direction) {
+    if (direction == "up") {
+      console.log("Switching frame to 2");
+      hideall();
+      setTimeout(function () {
+        hideall();
+        document.getElementById("viz2").style.opacity = 1;
+      }, 250);
+    }
+  },
+  context: document.getElementById("main-pane"),
+  offset: -400,
+});
+
+var waypoint4 = new Waypoint({
+  element: document.getElementById("slide3"),
+  handler: function (direction) {
+    if (direction == "down") {
+      console.log("Switching frame to 2");
+      hideall();
+      setTimeout(function () {
+        hideall();
+        document.getElementById("viz3").style.opacity = 1;
+      }, 250);
+    }
+  },
+  context: document.getElementById("main-pane"),
+  offset: 400,
+});
+
+var waypoint5 = new Waypoint({
+  element: document.getElementById("slide3"),
+  handler: function (direction) {
+    if (direction == "up") {
+      console.log("Switching frame to 2");
+      hideall();
+      setTimeout(function () {
+        hideall();
+        document.getElementById("viz3").style.opacity = 1;
+      }, 250);
+    }
+  },
+  context: document.getElementById("main-pane"),
+  offset: -400,
+});
+
+var waypoint6 = new Waypoint({
+  element: document.getElementById("slide4"),
+  handler: function (direction) {
+    if (direction == "down") {
+      console.log("Switching frame to 2");
+      hideall();
+      setTimeout(function () {
+        hideall();
+        document.getElementById("viz4").style.opacity = 1;
+      }, 250);
+    }
+  },
+  context: document.getElementById("main-pane"),
+  offset: 400,
 });

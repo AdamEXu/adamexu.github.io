@@ -1,0 +1,49 @@
+#container {
+  width: 50%;
+  height: 80%; /* Adjust the height as needed */
+  font-family: Montserrat;
+  position: relative;
+  overflow: hidden;
+  white-space: normal; /* Allow content to wrap normally */
+  background: #242028;
+  color: #000;
+  left: 30%;
+}
+
+#container .scroll {
+  background: #242028;
+  display: flex;
+  flex-direction: column; /* Change to column for vertical layout */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  height: fit-content; /* Adjust height dynamically */
+  animation: loop 6s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateY(50%); /* Translate on Y-axis */
+  }
+  100% {
+    transform: translateY(
+      -50%
+    ); /* Adjust the percentage to control the scroll length */
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: #000;
+  font-size: 0.9rem;
+  background-color: #efefef;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0; /* Adjust margin for vertical spacing */
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  box-shadow: 0 0.1rem 0.2rem #00000033, 0 0.1rem 0.5rem #0000004d,
+    0 0.2rem 01.5rem #00000066;
+  width: 80%;
+  height: 200px;
+}

@@ -7,6 +7,7 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="load.css" />
+    <link rel="stylesheet" type="text/css" href="cards.css" />
   </head>
   <body onload="onload()">
     <div class="loading" id="loading">
@@ -25,8 +26,27 @@
           <div class="scrolly-thingy"></div>
         </div>
         <div class="pane" id="slide2">
+          <h1>About Me</h1>
+          <p>
+            I am a high schooler who works on many different projects. I am
+            passionate in anything technology.
+          </p>
+        </div>
+        <div class="pane" id="slide3">
           <h1>Projects</h1>
           <p>Here are some of the projects I've worked on</p>
+          <br /><a href="https://github.com/AdamEXu">
+            <button>See more on GitHub</button>
+          </a>
+        </div>
+        <div class="pane" id="slide4">
+          <h1>Contact</h1>
+          <p>
+            My preferred contact method is through email. It is not displayed on this page to prevent spam. Instead, click the button on the right to reveal it.
+          </p>
+          <p>
+            You can also send me a DM on Discord. My username is @thetnter
+          </p>
         </div>
       </div>
       <div class="side-pane" id="side-pane">
@@ -34,10 +54,28 @@
           <img src="resources/wave.png" style="width: 40%; height: auto" />
         </div>
         <div class="side-pane-viz" id="viz2" style="opacity: 0">
-          <h1>Test Viz2</h1>
+          <h1>Visual Test for About Section</h1>
+        </div>
+        <div class="side-pane-viz" id="viz3" style="opacity: 0">
+          <div id="container">
+            <div class="scroll">
+              <div class="card item">Item 1</div>
+              <div class="card item">Item 2</div>
+              <div class="card item">Item 3</div>
+              <div class="card item">Item 4</div>
+            </div>
+            <div class="scroll">
+              <div class="card item">Item 1</div>
+              <div class="card item">Item 2</div>
+              <div class="card item">Item 3</div>
+              <div class="card item">Item 4</div>
+            </div>
+          </div>
+        </div>
+        <div class="side-pane-viz" id="viz4" style="opacity: 0">
+          <h1>Visual Test for Contact Form</h1>
         </div>
       </div>
-    </div>
     <div class="scroll-nag" id="scroll-nag">
       <p>Scroll down for more!</p>
     </div>
