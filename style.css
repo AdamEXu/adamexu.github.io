@@ -143,13 +143,15 @@ button {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.25s;
+  transition: background-color 0.25s, transform 0.25s;
 }
 
 button:hover {
   background-color: #cdcdcd;
+  transform: scale(1.05);
 }
 
 button:active {
   background-color: #eaeaea;
+  transform: scale(0.95);
 }
