@@ -1,5 +1,10 @@
 [
   {
+    "name": "Hackclub",
+    "url": "https://hackclub.com/",
+    "image": "https://adamxu.net/counterspell/hc-logo.png"
+  },
+  {
     "name": "Yubico",
     "url": "https://www.yubico.com/",
     "image": "https://adamxu.net/counterspell/yubico-logo-big.png"
