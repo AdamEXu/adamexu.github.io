@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Yubico",
+    "url": "https://www.yubico.com/",
+    "image": "https://adamxu.net/counterspell/yubico-logo-big.png"
+  },
+  {
+    "name": ".xyz",
+    "url": "https://gen.xyz/",
+    "image": "https://adamxu.net/counterspell/xyz-logo-color.png"
+  },
+  {
+    "name": "Desmos",
+    "url": "https://desmos.com/",
+    "image": "https://adamxu.net/counterspell/desmos.png"
+  }
+]
