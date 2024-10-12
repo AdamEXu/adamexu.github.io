@@ -1,0 +1,82 @@
+[
+  {
+    "time": "10:30 AM",
+    "event": "Doors Open - Check-in Begins"
+  },
+  {
+    "time": "11:00 AM",
+    "event": "Opening Ceremony - Welcome Speech and Information"
+  },
+  {
+    "time": "11:45 AM",
+    "event": "Team Formation - Find Your Team"
+  },
+  {
+    "time": "12:00 PM",
+    "event": "Brainstorm Lunch - Collaborative Idea Session"
+  },
+  {
+    "time": "1:00 PM",
+    "event": "Worktime Begins - Start of Project Work"
+  },
+  {
+    "time": "1:30 PM",
+    "event": "Sponsor Workshop - Learning from Sponsors"
+  },
+  {
+    "time": "2:15 PM",
+    "event": "Sponsor Workshop - Continuing Sessions"
+  },
+  {
+    "time": "3:00 PM",
+    "event": "Sprig Workshop - Hands-on Learning"
+  },
+  {
+    "time": "4:00 PM",
+    "event": "Fun Activity - Engage and Network"
+  },
+  {
+    "time": "4:30 PM",
+    "event": "Boba Workshop - Making Bubble Tea"
+  },
+  {
+    "time": "6:00 PM",
+    "event": "Dinner - Evening Meal"
+  },
+  {
+    "time": "7:00 PM",
+    "event": "Fun Activity - Evening Entertainment"
+  },
+  {
+    "time": "8:00 PM",
+    "event": "Lightning Talks - Rapid Presentations"
+  },
+  {
+    "time": "12:00 AM",
+    "event": "Midnight Surprise - Special Surprise Event"
+  },
+  {
+    "time": "8:00 AM",
+    "event": "Breakfast - Morning Meal"
+  },
+  {
+    "time": "9:00 AM",
+    "event": "Submissions End - Demo Time Begins"
+  },
+  {
+    "time": "9:40 AM",
+    "event": "Peer Voting - Vote for Your Favorite Games"
+  },
+  {
+    "time": "10:00 AM",
+    "event": "Closing Ceremony - Awards and Announcements"
+  },
+  {
+    "time": "10:30 AM",
+    "event": "Shop Time - Purchase Items with your XP"
+  },
+  {
+    "time": "11:00 AM",
+    "event": "Event Ends - Thank You for Participating"
+  }
+]
