@@ -5,6 +5,11 @@
     "image": "https://adamxu.net/counterspell/hc-logo.png"
   },
   {
+    "name": "Wolfram",
+    "url": "https://www.wolfram.com/",
+    "image": "https://adamxu.net/counterspell/wolfram.png"
+  },
+  {
     "name": "Yubico",
     "url": "https://www.yubico.com/",
     "image": "https://adamxu.net/counterspell/yubico-logo-big.png"
@@ -13,6 +18,11 @@
     "name": ".xyz",
     "url": "https://gen.xyz/",
     "image": "https://adamxu.net/counterspell/xyz-logo-color.png"
+  },
+  {
+    "name": "Interview Cake",
+    "url": "https://www.interviewcake.com/",
+    "image": "https://adamxu.net/counterspell/cake_blue.png"
   },
   {
     "name": "Desmos",
