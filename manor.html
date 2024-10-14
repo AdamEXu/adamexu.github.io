@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fun Game For All Ages And Adults And Kids Engaging Fun Online Game Single
+      Player Free Game Unlimited Play Time
+    </title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      #emoji-sequence {
+        font-size: 10px;
+      }
+
+      #scary-image {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #jumpscare {
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: none;
+      }
+
+      #fullscreen-warning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Audio Memorization Game -->
+    <div class="reduce-motion" id="fullscreen-warning">
+      <p>
+        This game contains flashing light sequences. You can disable this using
+        the button below.
+      </p>
+      <button id="reduce-motion" onclick="reduceMotion()">
+        Disable Motion
+      </button>
+      <p>
+        Note that if you would like to re-enable motion, you will need to
+        refresh the page.
+      </p>
+      <button id="continue" onclick="continueGame()">
+        I Understand, Continue
+      </button>
+    </div>
+
+    <div id="audio-game">
+      <h2>Memorize the Sounds</h2>
+      <p>
+        Listen to the sounds carefully and remember their order. You will not be
+        able to hear the sounds again. If you miss a sound, you will have to
+        start over by refreshing the page.
+      </p>
+      <button id="play-sounds">Play Sounds</button>
+    </div>
+
+    <audio id="sound1" src="ghost-sound.mp3"></audio>
+    <audio id="sound2" src="witch-sound.mp3"></audio>
+    <audio id="sound3" src="cauldron-sound.mp3"></audio>
+    <audio id="sound4" src="thunder-sound.mp3"></audio>
+
+    <!-- Emoji Memorization Game -->
+    <div id="emoji-game" style="display: none">
+      <h2>Memorize the Emojis</h2>
+      <p>Click on the emojis in the same order as the sounds:</p>
+      <div id="emoji-sequence" style="font-size: 10px; text-align: center">
+        <button id="emoji4" class="emoji-button">💀</button>
+        <button id="emoji3" class="emoji-button">⚡️</button>
+        <button id="emoji5" class="emoji-button">🧛‍♂️</button>
+        <button id="emoji2" class="emoji-button">🧙‍♀️</button>
+        <button id="emoji1" class="emoji-button">👻</button>
+      </div>
+    </div>
+
+    <!-- Jumpscare Section -->
+    <div id="jumpscare">
+      <img src="scary-image.gif" alt="scary image" id="scary-image" />
+      <audio id="scare-sound" src="scary-sound.mp3"></audio>
+    </div>
+
+    <script>
+      motionReduced = false; // To track if motion is reduced
+
+      const correctOrder = ["emoji3", "emoji1", "emoji4", "emoji2"]; // Correct emoji order corresponding to the sound order
+      let userSequence = []; // To store the user's selections
+
+      document
+        .getElementById("play-sounds")
+        .addEventListener("click", function () {
+          // remove the event listener after clicking the button
+          this.removeEventListener("click", arguments.callee);
+          this.style.display = "none";
+
+          // Play sound sequence
+          const sounds = ["sound3", "sound1", "sound4", "sound2"];
+          let index = 0;
+
+          function playNextSound() {
+            if (index < sounds.length) {
+              document.getElementById(sounds[index]).play();
+              index++;
+              setTimeout(playNextSound, 3000); // 3 seconds delay between sounds
+            } else {
+              // Switch to emoji game after sounds
+              document.getElementById("audio-game").style.display = "none";
+              document.getElementById("emoji-game").style.display = "block";
+
+              // Start jumpscare timer
+              setTimeout(triggerJumpscare, 12000); // After 12 seconds
+            }
+          }
+
+          playNextSound();
+        });
+
+      document
+        .getElementById("emoji-sequence")
+        .addEventListener("click", function (event) {
+          const clickedEmoji = event.target;
+          if (clickedEmoji.classList.contains("emoji-button")) {
+            // Get the id of the clicked emoji
+            const emojiId = clickedEmoji.id;
+
+            // Add the clicked emoji id to the user's sequence
+            userSequence.push(emojiId);
+
+            // Highlight the clicked emoji for feedback
+            // Unhighlight all other emojis first
+            document
+              .getElementById("emoji-sequence")
+              .querySelectorAll(".emoji-button")
+              .forEach((emoji) => (emoji.style.backgroundColor = ""));
+            clickedEmoji.style.backgroundColor = "red";
+            // setTimeout(function () {
+            //   clickedEmoji.style.backgroundColor = "";
+            // }, 1000);
+
+            // Check if the user has selected enough emojis
+            if (userSequence.length === correctOrder.length) {
+              checkSequence();
+            }
+          }
+        });
+
+      function checkSequence() {
+        // Compare the user's sequence with the correct order
+        const isCorrect = userSequence.every(
+          (emojiId, index) => emojiId === correctOrder[index]
+        );
+
+        if (isCorrect) {
+          // alert("You got the sequence right!"); // Placeholder for success action
+          triggerJumpscare();
+        } else {
+          // alert("Wrong sequence!"); // Placeholder for incorrect action
+          // Reset the user's sequence
+          userSequence = [];
+          // Make all emojis red for feedback
+          document
+            .getElementById("emoji-sequence")
+            .querySelectorAll(".emoji-button")
+            .forEach((emoji) => (emoji.style.backgroundColor = "red"));
+          setTimeout(function () {
+            document
+              .getElementById("emoji-sequence")
+              .querySelectorAll(".emoji-button")
+              .forEach((emoji) => (emoji.style.backgroundColor = ""));
+          }, 500);
+          alert("Wrong sequence!");
+        }
+
+        // Reset user sequence for replay (if needed)
+        userSequence = [];
+      }
+
+      function triggerJumpscare() {
+        document.getElementById("emoji-game").style.display = "none";
+        document.getElementById("jumpscare").style.display = "block";
+
+        // Flash scary image and play loud sound
+        document.getElementById("scary-image").style.display = "block";
+        document.getElementById("scare-sound").play();
+
+        // Flashing effect (optional)
+        setInterval(function () {
+          document.getElementById("scary-image").classList.toggle("hidden");
+        }, 100); // Flash every 100ms
+      }
+
+      function reduceMotion() {
+        document.getElementById("scary-image").src = "scary-fade.gif";
+        document.getElementById("reduce-motion").style.display = "none";
+        motionReduced = true;
+      }
+
+      function continueGame() {
+        document.getElementById("fullscreen-warning").style.display = "none";
+        if (!motionReduced) {
+          // enable "lightning" by flashing the background of the body between white and black
+        }
+      }
+    </script>
+  </body>
+</html>
