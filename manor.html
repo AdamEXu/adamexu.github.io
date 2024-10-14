@@ -54,9 +54,57 @@
         background-color: black;
         z-index: 9999;
       }
+
+      /* Style buttons */
+      button {
+        background-color: #ffb300;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: transform 0.25s, background-color 0.25s;
+      }
+      button:hover {
+        background-color: #ff6f00;
+      }
+      button:active {
+        background-color: #ff0000;
+        transform: translateY(4px);
+      }
+
+      .emoji-button {
+        background-color: #ffe100;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .reduce-motion {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 9999;
+      }
     </style>
   </head>
   <body>
+    <a href="https://hack.club/boba-manor"
+      >Open the door (or something corny like that)</a
+    >
     <!-- Audio Memorization Game -->
     <div class="reduce-motion" id="fullscreen-warning">
       <p>
@@ -64,14 +112,18 @@
         the button below.
       </p>
       <button id="reduce-motion" onclick="reduceMotion()">
-        Disable Motion
+        Disable Flashing Light Sequences
       </button>
+      <p style="display: none" id="reduce-motion-text">
+        Flashing light sequences have been turned down. Enjoy the game! (To
+        re-enable, refresh the page)
+      </p>
       <p>
         Note that if you would like to re-enable motion, you will need to
         refresh the page.
       </p>
       <button id="continue" onclick="continueGame()">
-        I Understand, Continue
+        I understand and wish to continue
       </button>
     </div>
 
@@ -85,10 +137,10 @@
       <button id="play-sounds">Play Sounds</button>
     </div>
 
-    <audio id="sound1" src="ghost-sound.mp3"></audio>
-    <audio id="sound2" src="witch-sound.mp3"></audio>
-    <audio id="sound3" src="cauldron-sound.mp3"></audio>
-    <audio id="sound4" src="thunder-sound.mp3"></audio>
+    <audio id="sound1" src="manor-resources/ghost-sound.mp3"></audio>
+    <audio id="sound2" src="manor-resources/switch-sound.mp3"></audio>
+    <audio id="sound3" src="manor-resources/cauldron-sound.mp3"></audio>
+    <audio id="sound4" src="manor-resources/thunder-sound.mp3"></audio>
 
     <!-- Emoji Memorization Game -->
     <div id="emoji-game" style="display: none">
@@ -105,8 +157,12 @@
 
     <!-- Jumpscare Section -->
     <div id="jumpscare">
-      <img src="scary-image.gif" alt="scary image" id="scary-image" />
-      <audio id="scare-sound" src="scary-sound.mp3"></audio>
+      <img
+        src="manor-resources/scary-image.gif"
+        alt="scary image"
+        id="scary-image"
+      />
+      <audio id="scare-sound" src="manor-resources/scary-sound.mp3"></audio>
     </div>
 
     <script>
@@ -211,24 +267,20 @@
         // Flash scary image and play loud sound
         document.getElementById("scary-image").style.display = "block";
         document.getElementById("scare-sound").play();
-
-        // Flashing effect (optional)
-        setInterval(function () {
-          document.getElementById("scary-image").classList.toggle("hidden");
-        }, 100); // Flash every 100ms
       }
 
       function reduceMotion() {
-        document.getElementById("scary-image").src = "scary-fade.gif";
+        document.getElementById("scary-image").src =
+          "manor-resources/scary-fade.gif";
         document.getElementById("reduce-motion").style.display = "none";
         motionReduced = true;
+        document.getElementById("reduce-motion-text").style.display = "block";
+        document.getElementById("continue").innerText =
+          "Continue without fast motion";
       }
 
       function continueGame() {
         document.getElementById("fullscreen-warning").style.display = "none";
-        if (!motionReduced) {
-          // enable "lightning" by flashing the background of the body between white and black
-        }
       }
     </script>
   </body>
