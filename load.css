@@ -1,22 +1,31 @@
 .loading {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #222028;
   display: flex;
+  background-color: #cdcdcd;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
+.loading-container {
+  margin-top: calc(50vh - 170px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .loading-text p {
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
 }
 
 @keyframes grow {
@@ -36,8 +45,12 @@
   height: 250px;
   border: none;
   border-radius: 50%;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgb(231, 253, 255) 0%, rgba(255,255,255,0) 50%);
+  background: rgb(0, 234, 255);
+  background: radial-gradient(
+    circle,
+    rgb(0, 234, 255) 0%,
+    rgba(0, 234, 255, 0) 50%
+  );
   animation: grow 1.5s infinite;
 }
 
@@ -70,4 +83,14 @@
 
 .content-in {
   animation: content-in 0.5s forwards;
+}
+
+@media (prefers-color-scheme: dark) {
+  .loading {
+    background-color: #292929;
+  }
+
+  .loading-text p {
+    color: #efefef;
+  }
 }
