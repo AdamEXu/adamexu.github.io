@@ -1,0 +1,22 @@
+@media (max-width: 1000px) {
+  .main-pane {
+    width: 100vw;
+    padding-right: 0;
+    height: auto;
+    display: block;
+  }
+
+  .side-pane {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151515;
+    color: #efefef;
+  }
+
+  button {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  button:hover {
+    background-color: #cdcdcd;
+  }
+
+  button:active {
+    background-color: #eaeaea;
+  }
+
+  a {
+    color: #aaccff;
+  }
+
+  a:hover {
+    color: #88bbff;
+  }
+
+  a:active {
+    color: #6699ff;
+  }
+}

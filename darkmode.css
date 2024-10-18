@@ -1,20 +1,27 @@
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #151515;
+  .content {
+    background: rgba(0, 0, 0, 0.7);
     color: #efefef;
   }
 
-  button {
-    background-color: #efefef;
-    color: #000;
+  nav {
+    background: rgba(0, 0, 0, 0.2);
+    color: #efefef;
   }
 
-  button:hover {
-    background-color: #cdcdcd;
+  nav a {
+    color: #efefef;
   }
 
-  button:active {
-    background-color: #eaeaea;
+  nav a:hover {
+    color: #efefef;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  nav a:active,
+  nav a.active {
+    color: #efefef;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   a {
@@ -27,5 +34,22 @@
 
   a:active {
     color: #6699ff;
+  }
+
+  a.button {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  a.button:hover {
+    background-color: #cdcdcd;
+  }
+
+  a.button:active {
+    background-color: #eaeaea;
+  }
+
+  .side-pane-viz {
+    color: #efefef;
   }
 }

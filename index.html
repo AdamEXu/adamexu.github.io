@@ -1,92 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Xu</title>
     <link
       rel="stylesheet"
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="load.css" />
-    <link rel="stylesheet" type="text/css" href="cards.css" />
-    <link rel="stylesheet" type="text/css" href="darkmode.css" />
     <link rel="stylesheet" type="text/css" href="mobile.css" />
+    <link rel="stylesheet" type="text/css" href="darkmode.css" />
+    <script src="noframework.waypoints.min.js"></script>
   </head>
-  <body onload="onload()">
+  <body>
     <nav>
       <div class="nav-left">
-        <a href="/">Home</a>
+        <h1>Adam Xu</h1>
+      </div>
+      <div class="nav-right">
+        <a href="/">About</a>
+        <a href="/blog">Blog</a>
       </div>
     </nav>
-    <div class="loading" id="loading">
-      <div class="loading-container">
-        <div class="loading-animation">
-          <div class="circle"></div>
-        </div>
-        <div class="loading-text">
-          <p>Loading...</p>
-        </div>
+    <div class="content" id="content">
+      <div class="pane" id="intro">
+        <h1>Hello!</h1>
+        <p>My name is Adam Xu.</p>
+        <p>Welcome to my website on the world wide web.</p>
+        <p>Scroll through this page to learn a bit about me.</p>
       </div>
-    </div>
-    <div class="content" id="content" onscroll="scroll_func()">
-      <div class="main-pane" id="main-pane">
-        <div class="pane" id="intro">
-          <h1>Hello!</h1>
-          <p>My name is Adam Xu</p>
-          <div class="scrolly-thingy"></div>
-        </div>
-        <div class="pane" id="about">
-          <h1>About Me</h1>
-          <p>
-            I am a high schooler who works on many different projects. I am
-            passionate in anything technology.
-          </p>
-        </div>
-        <div class="pane" id="projects">
-          <h1>Projects</h1>
-          <p>Here are some of the projects I've worked on</p>
-          <br /><a href="https://github.com/AdamEXu">
-            <button>See more on GitHub</button>
-          </a>
-        </div>
-        <div class="pane" id="contact">
-          <h1>Contact</h1>
-          <p>
-            My preferred contact method is through email. It is not displayed on
-            this page to prevent spam. Instead, click the button on the right to
-            reveal it.
-          </p>
-          <p>You can also send me a DM on Discord. My username is @thetnter</p>
-        </div>
+      <div class="pane" id="about">
+        <h1>Hello!</h1>
+        <p>My name is Adam Xu.</p>
+        <p>Welcome to my little website on the world wide web.</p>
+        <p>Scroll through this page to learn a bit about me.</p>
+      </div>
+      <div class="pane" id="projects">
+        <h1>Projects</h1>
+        <p>Here are some of the projects I've worked on</p>
+        <br /><a href="https://github.com/AdamEXu">
+          <a class="button">See more on GitHub</a>
+        </a>
+      </div>
+      <div class="pane" id="contact">
+        <h1>Contact</h1>
+        <p>My preferred contact method is through email.</p>
+        <p>You can also send me a DM on Discord.</p>
+        <p>I'll try to get back to you as soon as possible.</p>
       </div>
     </div>
     <div class="side-pane" id="side-pane">
       <div class="side-pane-viz wave" id="viz1" style="opacity: 1">
-        <img src="resources/wave.png" style="width: 40%; height: auto" />
+        <img src="resources/wave.png" />
       </div>
       <div class="side-pane-viz" id="viz2" style="opacity: 0">
         <h1>Visual Test for About Section</h1>
       </div>
       <div class="side-pane-viz" id="viz3" style="opacity: 0">
-        <div id="container">
-          <div class="scroll">
-            <div class="card item">Item 1</div>
-            <div class="card item">Item 2</div>
-            <div class="card item">Item 3</div>
-            <div class="card item">Item 4</div>
-          </div>
-          <div class="scroll">
-            <div class="card item">Item 1</div>
-            <div class="card item">Item 2</div>
-            <div class="card item">Item 3</div>
-            <div class="card item">Item 4</div>
-          </div>
-        </div>
+        <h1>Visual Test for Projects Section</h1>
       </div>
       <div class="side-pane-viz" id="viz4" style="opacity: 0">
         <h1>Visual Test for Contact Form</h1>
       </div>
     </div>
   </body>
-  <script src="noframework.waypoints.min.js"></script>
-  <script src="scroll.js"></script>
+  <script src="script.js"></script>
 </html>
