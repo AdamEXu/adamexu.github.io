@@ -1,21 +1,11 @@
 var scrolled = false;
 
-function all_scroll() {
-  document.getElementById("side-pane").addEventListener("wheel", function (e) {
-    e.preventDefault();
-    document.getElementById("main-pane").scrollBy({
-      top: e.deltaY,
-    });
-  });
-}
-
 function scroll_func() {
   scrolled = true;
   document.getElementById("scroll-nag").classList.add("scroll-nag-out");
 }
 
 function onload() {
-  all_scroll();
   document.getElementById("loading").classList.add("loading-out");
   setTimeout(function () {
     document.getElementById("loading").style.display = "none";
@@ -42,7 +32,7 @@ function hideall() {
 }
 
 var waypoint1 = new Waypoint({
-  element: document.getElementById("slide1"),
+  element: document.getElementById("intro"),
   handler: function (direction) {
     if (direction == "up") {
       console.log("Switching frame to 1");
@@ -53,12 +43,12 @@ var waypoint1 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: -400,
 });
 
 var waypoint2 = new Waypoint({
-  element: document.getElementById("slide2"),
+  element: document.getElementById("about"),
   handler: function (direction) {
     if (direction == "down") {
       console.log("Switching frame to 2");
@@ -69,12 +59,12 @@ var waypoint2 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: 400,
 });
 
 var waypoint3 = new Waypoint({
-  element: document.getElementById("slide2"),
+  element: document.getElementById("about"),
   handler: function (direction) {
     if (direction == "up") {
       console.log("Switching frame to 2");
@@ -85,12 +75,12 @@ var waypoint3 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: -400,
 });
 
 var waypoint4 = new Waypoint({
-  element: document.getElementById("slide3"),
+  element: document.getElementById("projects"),
   handler: function (direction) {
     if (direction == "down") {
       console.log("Switching frame to 2");
@@ -101,12 +91,12 @@ var waypoint4 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: 400,
 });
 
 var waypoint5 = new Waypoint({
-  element: document.getElementById("slide3"),
+  element: document.getElementById("projects"),
   handler: function (direction) {
     if (direction == "up") {
       console.log("Switching frame to 2");
@@ -117,12 +107,12 @@ var waypoint5 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: -400,
 });
 
 var waypoint6 = new Waypoint({
-  element: document.getElementById("slide4"),
+  element: document.getElementById("contact"),
   handler: function (direction) {
     if (direction == "down") {
       console.log("Switching frame to 2");
@@ -133,6 +123,6 @@ var waypoint6 = new Waypoint({
       }, 250);
     }
   },
-  context: document.getElementById("main-pane"),
+  context: document.getElementById("content"),
   offset: 400,
 });

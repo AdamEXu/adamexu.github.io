@@ -1,60 +1,121 @@
 * {
   font-family: Inter, Helvetica, sans-serif;
-  overflow: hidden;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
-  background-color: #242028;
-  color: #fff;
+  /* background-color: #efefef; */
+  color: #202020;
+  /* Background */
+  background: linear-gradient(135deg, #ff003c, #0066ff);
+  background-size: 300% 300%;
+  animation: gradient 4s ease infinite;
 }
 
-p {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-h1 {
-  font-size: 4rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+nav {
+  height: 6rem;
+  position: fixed;
+  width: calc(100vw - 3rem);
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  margin-left: 2rem;
+}
+
+.nav-right {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+nav a {
+  font-size: 1.25rem;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  transform: scale(1.05);
+}
+
+nav a:active,
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000000;
+  transform: scale(0.95);
 }
 
 .content {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  opacity: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  /* Apply blur effect on top of background */
+  background: rgba(255, 255, 255, 0.7);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  /* Transition */
 }
 
-.main-pane {
-  width: 40vw;
+.pane {
   height: 100vh;
-  overflow: auto;
-}
-
-::-webkit-scrollbar {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 38vw;
+  padding-right: 62vw;
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 1rem;
 }
 
 .side-pane {
   width: 60vw;
   height: 100vh;
   display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .side-pane-viz {
@@ -64,51 +125,13 @@ h1 {
   margin-left: auto;
   width: 60vw;
   transition: opacity 0.25s;
-}
-
-.pane {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
-
-.scroll-nag {
-  opacity: 0;
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
   text-align: center;
+  display: flex;
 }
 
-@keyframes movement {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.scroll-nag-in {
-  animation: movement 2s infinite;
-  opacity: 1;
-  transition: opacity 0.25s;
-}
-
-.scroll-nag-out {
-  opacity: 0;
-}
-
+/* animation for waving hand */
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -134,9 +157,32 @@ h1 {
   animation: wave 2s infinite;
 }
 
-button {
-  background-color: #efefef;
-  color: #000;
+.wave img {
+  width: 40%;
+  height: auto;
+}
+
+a {
+  color: #113355;
+  text-decoration: none;
+  transition: color 0.25s, transform 0.25s;
+  display: inline-block;
+}
+
+a:hover {
+  color: #113388;
+  text-decoration: underline;
+  transform: scale(1.01);
+}
+
+a:active {
+  color: #1155aa;
+  transform: scale(0.99);
+}
+
+a.button {
+  background-color: #101010;
+  color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
@@ -146,12 +192,16 @@ button {
   transition: background-color 0.25s, transform 0.25s;
 }
 
-button:hover {
-  background-color: #cdcdcd;
+a.button:hover {
+  background-color: #303030;
   transform: scale(1.05);
 }
 
-button:active {
-  background-color: #eaeaea;
+a.button:active {
+  background-color: #000;
   transform: scale(0.95);
+}
+
+.nav-height {
+  padding-top: 8rem;
 }
