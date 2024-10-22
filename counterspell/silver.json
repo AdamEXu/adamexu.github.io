@@ -3,5 +3,15 @@
     "name": "Amazon Web Services",
     "url": "https://aws.amazon.com/",
     "image": "https://assets.aboutamazon.com/26/0f/906307a146c69b3d9f7bf77a3f15/aws.png"
+  },
+  {
+    "name": "Sumo Logic",
+    "url": "https://sumologic.com/",
+    "image": "https://adamxu.net/counterspell/SumoLogic_Logo_SumoBlue_RGB_@2x.png"
+  },
+  {
+    "name": "UST",
+    "url": "https://ust.com",
+    "image": "https://adamxu.net/counterspell/UST.png"
   }
 ]
