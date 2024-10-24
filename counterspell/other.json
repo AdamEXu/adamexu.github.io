@@ -23,5 +23,10 @@
     "name": "Desmos",
     "url": "https://desmos.com/",
     "image": "https://adamxu.net/counterspell/desmos.png"
+  },
+  {
+    "name": "CodeCrafters",
+    "url": "https://codecrafters.io/",
+    "image": "https://adamxu.net/counterspell/Logomark%20(With%20color).png"
   }
 ]
