@@ -12,9 +12,25 @@
       href="https://ca.slack-edge.com/T0266FRGM-U020X4GCWSF-0684d4ad62bc-512"
     />
     <style>
+      @keyframes fade {
+        0% {
+          background-color: #284618;
+          color: #feabc3;
+        }
+        50% {
+          background-color: #feabc3;
+          color: #284618;
+        }
+        100% {
+          background-color: #284618;
+          color: #feabc3;
+        }
+      }
+
       body {
         background-color: #284618;
         color: #feabc3;
+        animation: fade 10s infinite;
         margin: 3rem;
         padding: 3rem;
         border-radius: 1rem;
@@ -114,6 +130,19 @@
         animation: christmas 0.4s infinite;
       }
     </style>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+"></script>
+
+    <script>
+      function PlayMusic() {
+        var play = document.getElementById("music");
+        play.play();
+        play = document.getElementById("music2");
+        play.play();
+      }
+    </script>
   </head>
   <body>
     <h1>
@@ -136,7 +165,9 @@
       Thanks for watching, like and subscribe, and I'll see you next time!
     </h2>
     <h1>BYEEEE!</h1>
+    <p>Click the iamge if you dare!</p>
     <img
+      onclick="alert('legend says if you add the image of the reviewer you get free boba :trolll:'); PlayMusic()"
       src="https://ca.slack-edge.com/T0266FRGM-U020X4GCWSF-0684d4ad62bc-512"
       style="width: 100vw; height: 60vw"
     />
@@ -144,5 +175,17 @@
     <a href="https://youtube.com/watch?v=dQw4w9WgXcQ"
       >Click here to learn more!</a
     >
+    <audio src="Elektronomia.mp3" id="music"></audio>
+    <audio src="springinstep.mp3" id="music2"></audio>
+    <iframe
+      width="1492"
+      height="755"
+      src="https://www.youtube.com/embed/oQwaiw-gUBM"
+      title="World War 3 Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
