@@ -2,7 +2,7 @@
   {
     "name": "Wolfram",
     "url": "https://www.wolfram.com/",
-    "image": "https://content.wolfram.com/sites/10/2019/04/wolfram-corporate-logo-stacked-med.png"
+    "image": "https://adamxu.net/counterspell/wolfram-corporate-logo-stacked-med.png"
   },
   {
     "name": "Yubico",
@@ -37,7 +37,7 @@
   {
     "name": "AoPS",
     "url": "https://artofproblemsolving.com/",
-    "image": "https://artofproblemsolving.com/assets/images/logos/aops.svg"
+    "image": "https://adamxu.net/counterspell/aopslogo.png"
   },
   {
     "name": "NotchNook",
@@ -48,5 +48,15 @@
     "name": "SideFX",
     "url": "https://www.sidefx.com/",
     "image": "https://adamxu.net/counterspell/sidefx_badge_flat.png"
+  },
+  {
+    "name": "BuidlGuidl",
+    "url": "https://buidlguidl.com/",
+    "image": "https://adamxu.net/counterspell/BuidlGuidl.png"
+  },
+  {
+    "name": "GXGames",
+    "url": "https://gx.games/",
+    "image": "https://adamxu.net/counterspell/GXGames.png"
   }
 ]
