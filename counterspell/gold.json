@@ -28,5 +28,10 @@
     "name": "GXGames",
     "url": "https://gx.games/",
     "image": "https://adamxu.net/counterspell/GXGames.png"
+  },
+  {
+    "name": "GameMaker",
+    "url": "https://gamemaker.io/en",
+    "image": "https://adamxu.net/counterspell/gamemaker-logo.png"
   }
 ]
