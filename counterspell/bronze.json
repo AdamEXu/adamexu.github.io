@@ -48,5 +48,10 @@
     "name": "SideFX",
     "url": "https://www.sidefx.com/",
     "image": "https://adamxu.net/counterspell/sidefx_badge_flat.png"
+  },
+  {
+    "name": "Playdate",
+    "url": "https://play.date/",
+    "image": "https://adamxu.net/counterspell/Playdatelogo-stacked-yellow.jpg"
   }
 ]
