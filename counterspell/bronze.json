@@ -40,14 +40,14 @@
     "image": "https://adamxu.net/counterspell/aopslogo.png"
   },
   {
-    "name": "NotchNook",
-    "url": "https://lo.cafe/notchnook",
-    "image": "https://adamxu.net/counterspell/NotchNook.png"
-  },
-  {
     "name": "SideFX",
     "url": "https://www.sidefx.com/",
     "image": "https://adamxu.net/counterspell/sidefx_badge_flat.png"
+  },
+  {
+    "name": "NotchNook",
+    "url": "https://lo.cafe/notchnook",
+    "image": "https://adamxu.net/counterspell/NotchNook.png"
   },
   {
     "name": "Playdate",
