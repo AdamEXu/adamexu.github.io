@@ -1,5 +1,9 @@
 [
   {
+    "question": "Should I bring snacks and food?",
+    "answer": "No, thanks to our generous sponsors, all food is completely catered and we will have lots of snacks and drinks."
+  },
+  {
     "question": "Am I eligible to sign up?",
     "answer": "If you're 18 or under, yes, we are so excited to see you! If you're over 18 but still in high school, shoot us an email at <a href=\"mailto:counterspell@hackclub.com\">counterspell@hackclub.com</a>."
   },
@@ -21,7 +25,7 @@
   },
   {
     "question": "What do I need to bring to Counterspell?",
-    "answer": "Your laptop, charger, and an open mind! If your location is overnight, also bring toiletries, and a sleeping bag."
+    "answer": "Your laptop, charger, and an open mind!"
   },
   {
     "question": "My parents are worried!",
