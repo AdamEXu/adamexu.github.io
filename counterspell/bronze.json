@@ -53,5 +53,10 @@
     "name": "Playdate",
     "url": "https://play.date/",
     "image": "https://adamxu.net/counterspell/Playdatelogo-stacked-yellow.jpg"
+  },
+  {
+    "name": "HyperX",
+    "url": "https://hyperx.com/",
+    "image": "https://adamxu.net/counterspell/hyperx.png"
   }
 ]
