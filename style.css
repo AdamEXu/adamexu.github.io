@@ -9,9 +9,10 @@ html {
   /* background-color: #efefef; */
   color: #202020;
   /* Background */
-  background: linear-gradient(135deg, #ff003c, #0066ff);
+  background: linear-gradient(135deg, #00aa88, #0066ff);
   background-size: 300% 300%;
   animation: gradient 4s ease infinite;
+  overflow: hidden;
 }
 
 @keyframes gradient {
@@ -43,6 +44,12 @@ nav {
 
 .nav-left {
   margin-left: 2rem;
+}
+
+.nav-left h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .nav-right {
@@ -85,14 +92,14 @@ nav a.active {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   /* Apply blur effect on top of background */
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
   /* backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); */
   /* Transition */
 }
 
 .pane {
-  height: 100vh;
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,6 +165,27 @@ nav a.active {
 }
 
 .wave img {
+  width: 40%;
+  height: auto;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.hover {
+  animation: hover 5 ` ` second ` ` ` s infinite;
+}
+
+.hover img {
   width: 40%;
   height: auto;
 }
