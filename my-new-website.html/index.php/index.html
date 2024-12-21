@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Welcome to My Website! This is Adam Xu's personal website! I hope you
+      enjoyed it! Thanks for visiting!
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://ca.slack-edge.com/T0266FRGM-U020X4GCWSF-0684d4ad62bc-512"
+    />
+    <style>
+      @keyframes fade {
+        0% {
+          background-color: #284618;
+          color: #feabc3;
+        }
+        50% {
+          background-color: #feabc3;
+          color: #284618;
+        }
+        100% {
+          background-color: #284618;
+          color: #feabc3;
+        }
+      }
+
+      body {
+        background-color: #284618;
+        color: #feabc3;
+        animation: fade 10s infinite;
+        margin: 3rem;
+        padding: 3rem;
+        border-radius: 1rem;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-shadow: 0 0 1rem #000;
+        box-shadow: 0 0 1rem #000;
+      }
+
+      a {
+        background-color: #937693;
+        color: #173482;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        transition: background-color 0.25s, transform 0.25s;
+        display: inline-block;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0) translateY(0) scale(2);
+        }
+        25% {
+          transform: translateX(1rem) translateY(0) scale(1.5);
+        }
+        50% {
+          transform: translateX(0) translateY(1rem) scale(2.2);
+        }
+        75% {
+          transform: translateX(-1rem) translateY(0) scale(1.5);
+        }
+        100% {
+          transform: translateX(0) translateY(0) scale(2);
+        }
+      }
+
+      a:hover {
+        background-color: #967568;
+        animation: shake 0.25s infinite;
+      }
+
+      a:active {
+        background-color: #332233;
+        animation: none;
+        transform: scale(0.2);
+      }
+
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 20rem #ff0000;
+        width: 100vw;
+        height: 60vw;
+        object-position: center;
+      }
+
+      @keyframes christmas {
+        0% {
+          box-shadow: 0 0 20rem #00ff00;
+        }
+        50% {
+          box-shadow: 0 0 20rem #ff0000;
+        }
+        100% {
+          box-shadow: 0 0 20rem #00ff00;
+        }
+      }
+
+      img:hover {
+        animation: christmas 0.15s infinite;
+      }
+
+      @keyframes new-one {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      h1:hover {
+        animation: new-one 0.25s infinite;
+      }
+
+      p:hover {
+        animation: new-one 0.25s infinite;
+      }
+
+      h2:hover {
+        animation: christmas 0.4s infinite;
+      }
+    </style>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+"></script>
+
+    <script>
+      function PlayMusic() {
+        var play = document.getElementById("music");
+        play.play();
+        play = document.getElementById("music2");
+        play.play();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Welcome to my personal website! This is a very good website. I made it for
+      free boba. Please approve it.
+    </h1>
+    <p>
+      I promise you a lot of work went into the creation of this website. I had
+      to turn off all of my AI tools! Luckily I now know how to HTML.
+    </p>
+    <a href="https://github.com/AdamEXu"
+      >Don't look at my GitHub, I clearly have never coded before.</a
+    >
+    <p>
+      Thank you so much Hack Club for introducing coding to me. I have never
+      ever coded in my life until today. I now know all of the C++'s and
+      pointers and Javas and Javascript files notations.
+    </p>
+    <h2>
+      Thanks for watching, like and subscribe, and I'll see you next time!
+    </h2>
+    <h1>BYEEEE!</h1>
+    <p>Click the iamge if you dare!</p>
+    <img
+      onclick="alert('legend says if you add the image of the reviewer you get free boba :trolll:'); PlayMusic()"
+      src="https://ca.slack-edge.com/T0266FRGM-U020X4GCWSF-0684d4ad62bc-512"
+      style="width: 100vw; height: 60vw"
+    />
+    <p>Yes, I work very hard on this website.</p>
+    <a href="https://youtube.com/watch?v=dQw4w9WgXcQ"
+      >Click here to learn more!</a
+    >
+    <audio src="Elektronomia.mp3" id="music"></audio>
+    <audio src="springinstep.mp3" id="music2"></audio>
+    <iframe
+      width="1492"
+      height="755"
+      src="https://www.youtube.com/embed/oQwaiw-gUBM"
+      title="World War 3 Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

@@ -1,7 +1,37 @@
 [
   {
-    "name": "This Could Be Your Company",
-    "url": "#",
-    "image": "https://adamxu.net/counterspell/eyes.png"
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/",
+    "image": "https://adamxu.net/counterspell/AWS%20Logo.png"
+  },
+  {
+    "name": "Sumo Logic",
+    "url": "https://sumologic.com/",
+    "image": "https://adamxu.net/counterspell/SumoLogic_Logo_SumoBlue_RGB_@2x.png"
+  },
+  {
+    "name": "UST",
+    "url": "https://ust.com",
+    "image": "https://adamxu.net/counterspell/ust_logo_iteration_1_ll_300_rgb_pos.jpg"
+  },
+  {
+    "name": "ASCENDING",
+    "url": "https://ascendingdc.com/",
+    "image": "https://adamxu.net/counterspell/logo-3x.png"
+  },
+  {
+    "name": "BuidlGuidl",
+    "url": "https://buidlguidl.com/",
+    "image": "https://adamxu.net/counterspell/BuidlGuidl.png"
+  },
+  {
+    "name": "GXGames",
+    "url": "https://gx.games/",
+    "image": "https://adamxu.net/counterspell/GXGames.png"
+  },
+  {
+    "name": "GameMaker",
+    "url": "https://gamemaker.io/en",
+    "image": "https://adamxu.net/counterspell/gamemaker-logo.png"
   }
 ]
