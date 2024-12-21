@@ -1,0 +1,223 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+#website {
+  background-color: #000;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10rem;
+}
+
+#website h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#website p {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #ff2222;
+  color: #fff;
+  border: solid;
+  border-radius: 0.5rem;
+  border-color: #22aa66;
+  border-width: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.button:hover {
+  background-color: #ff4444;
+  transform: scale(1.1) translateY(2px) rotate(-3deg);
+}
+
+.button:active {
+  background-color: #ff0000;
+  transform: scale(0.9) translateY(4px) rotate(3deg);
+}
+
+#website a {
+  color: #008800;
+  text-decoration: underline;
+  transition: color 0.25s, transform 0.25s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#good-website {
+  background-color: #00aa88;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10rem;
+}
+
+#good-website h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#good-website p {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.music-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: #ff2222;
+  color: #fff;
+  border: solid;
+  border-radius: 0.5rem;
+  border-color: #22aa66;
+  border-width: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.music-button:hover {
+  background-color: #ff4444;
+  transform: scale(1.1) translateY(2px) rotate(-3deg);
+}
+
+.music-button:active {
+  background-color: #ff0000;
+  transform: scale(0.9) translateY(4px) rotate(3deg);
+}
+
+@keyframes bad-colors {
+  0% {
+    background-color: #ff0000;
+    color: #00ff00;
+    fill-color: #00ff00;
+    stroke-color: #00ff00;
+    fill: #00ff00;
+    border-color: #0000ff;
+  }
+  49.9% {
+    background-color: #ff0000;
+    color: #00ff00;
+    fill-color: #00ff00;
+    stroke-color: #00ff00;
+    fill: #00ff00;
+    border-color: #0000ff;
+  }
+  50% {
+    background-color: #00ff00;
+    color: #ff0000;
+    fill-color: #ff0000;
+    stroke-color: #ff0000;
+    fill: #ff0000;
+    border-color: #0000ff;
+  }
+  100% {
+    background-color: #00ff00;
+    color: #ff0000;
+    fill-color: #ff0000;
+    stroke-color: #ff0000;
+    fill: #ff0000;
+    border-color: #0000ff;
+  }
+}
+
+#bad-website {
+  background-color: #ff0000;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Comic Neue, cursive;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10rem;
+  animation: bad-colors 0.3s infinite;
+}
+
+#bad-website h1 {
+  font-size: 8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#bad-website p {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.music-button-bad {
+  background-color: #0000ff;
+  color: #fff;
+  border: solid;
+  border-radius: 0.5rem;
+  border-color: #00ff00;
+  border-width: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.music-button-bad:hover {
+  background-color: #0000ff;
+  transform: scale(1.1) translateY(2px) rotate(-3deg);
+}
+
+.music-button-bad:active {
+  background-color: #0000ff;
+  transform: scale(0.9) translateY(4px) rotate(3deg);
+}
