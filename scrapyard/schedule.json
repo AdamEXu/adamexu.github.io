@@ -1,0 +1,15 @@
+[
+  {
+    "day": "Schedule",
+    "events": [
+      {
+        "time": "8:30 AM - 9:00 AM",
+        "event": "Check-in + Breakfast"
+      },
+      {
+        "time": "9:00 AM - 9:40 AM",
+        "event": "Opening Ceremony"
+      }
+    ]
+  }
+]

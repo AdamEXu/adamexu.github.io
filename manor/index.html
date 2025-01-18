@@ -148,10 +148,10 @@
       <button id="play-sounds">Play Sounds</button>
     </div>
 
-    <audio id="sound1" src="manor-resources/ghost-sound.mp3"></audio>
-    <audio id="sound2" src="manor-resources/switch-sound.mp3"></audio>
-    <audio id="sound3" src="manor-resources/cauldron-sound.mp3"></audio>
-    <audio id="sound4" src="manor-resources/thunder-sound.mp3"></audio>
+    <audio id="sound1" src="./ghost-sound.mp3"></audio>
+    <audio id="sound2" src="./switch-sound.mp3"></audio>
+    <audio id="sound3" src="./cauldron-sound.mp3"></audio>
+    <audio id="sound4" src="./thunder-sound.mp3"></audio>
 
     <!-- Emoji Memorization Game -->
     <div id="emoji-game" style="display: none">
@@ -168,12 +168,8 @@
 
     <!-- Jumpscare Section -->
     <div id="jumpscare">
-      <img
-        src="manor-resources/scary-image.gif"
-        alt="scary image"
-        id="scary-image"
-      />
-      <audio id="scare-sound" src="manor-resources/scary-sound.mp3"></audio>
+      <img src="./scary-image.gif" alt="scary image" id="scary-image" />
+      <audio id="scare-sound" src="./scary-sound.mp3"></audio>
     </div>
 
     <script>
@@ -281,8 +277,7 @@
       }
 
       function reduceMotion() {
-        document.getElementById("scary-image").src =
-          "manor-resources/scary-fade.gif";
+        document.getElementById("scary-image").src = "./scary-fade.gif";
         document.getElementById("reduce-motion").style.display = "none";
         motionReduced = true;
         document.getElementById("reduce-motion-text").style.display = "block";

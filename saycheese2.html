@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>That's crazy!</title>
+    <style>
+      .wavy {
+        animation-name: wavy;
+        animation-duration: 1.3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      @keyframes wavy {
+        0% {
+          top: 0px;
+        }
+        50% {
+          top: -4px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+    </style>
+    <script>
+      function waveText(element) {
+        let delay = 100;
+
+        let text = element.innerText;
+
+        element.innerHTML = text
+          .split("")
+          .map((letter) => {
+            console.log(letter);
+            return `<span>` + letter + `</span>`;
+          })
+          .join("");
+
+        Array.from(element.children).forEach((span, index) => {
+          setTimeout(() => {
+            span.classList.add("wavy");
+          }, index * 60 + delay);
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <p>How did you get here?</p>
+    <p>Must have taken a lot of guessing to finally get here.</p>
+    <p>I must present to you... your prize!</p>
+    <p>But your prize...</p>
+    <p style="margin-bottom=100vh">is...</p>
+    <p style="margin-bottom=100vh" class="wave">keep scrolling...</p>
+    <p style="margin-bottom=100vh" class="wave">you're getting closer......</p>
+    <p style="margin-bottom=500vh" class="wave">keep scrolling...</p>
+    <p style="margin-bottom=1000vh" class="wave">
+      how much does one have to scroll????
+    </p>
+    <p>Finally!</p>
+    <p>Your prize..........</p>
+    <p>is......</p>
+    <a>Click here to get your prize!</a>
+    <p>Alright, bye!</p>
+    <script>
+      let waveElements = document.querySelectorAll(".wave");
+      waveElements.forEach((element) => {
+        waveText(element);
+      });
+    </script>
+  </body>
+</html>
