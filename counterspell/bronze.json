@@ -1,7 +1,62 @@
 [
   {
-    "name": "Foothill College",
-    "url": "https://foothill.edu/eti/",
-    "image": "https://adamxu.net/counterspell/eti_logo_logo_blck_background_nalight.png"
+    "name": "Wolfram",
+    "url": "https://www.wolfram.com/",
+    "image": "https://adamxu.net/counterspell/wolfram-corporate-logo-stacked-med.png"
+  },
+  {
+    "name": "Yubico",
+    "url": "https://www.yubico.com/",
+    "image": "https://adamxu.net/counterspell/yubico-logo-big.png"
+  },
+  {
+    "name": ".xyz",
+    "url": "https://gen.xyz/",
+    "image": "https://adamxu.net/counterspell/xyz-logo-color.png"
+  },
+  {
+    "name": "Interview Cake",
+    "url": "https://www.interviewcake.com/",
+    "image": "https://adamxu.net/counterspell/cake_blue.png"
+  },
+  {
+    "name": "Desmos",
+    "url": "https://desmos.com/",
+    "image": "https://adamxu.net/counterspell/desmos.png"
+  },
+  {
+    "name": "CodeCrafters",
+    "url": "https://codecrafters.io/",
+    "image": "https://adamxu.net/counterspell/Logomark%20(With%20color).png"
+  },
+  {
+    "name": "Product Teacher",
+    "url": "https://productteacher.com/",
+    "image": "https://adamxu.net/counterspell/product_teacher_logo.jpg"
+  },
+  {
+    "name": "AoPS",
+    "url": "https://artofproblemsolving.com/",
+    "image": "https://adamxu.net/counterspell/aopslogo.png"
+  },
+  {
+    "name": "SideFX",
+    "url": "https://www.sidefx.com/",
+    "image": "https://adamxu.net/counterspell/sidefx_badge_flat.png"
+  },
+  {
+    "name": "NotchNook",
+    "url": "https://lo.cafe/notchnook",
+    "image": "https://adamxu.net/counterspell/NotchNook.png"
+  },
+  {
+    "name": "Playdate",
+    "url": "https://play.date/",
+    "image": "https://adamxu.net/counterspell/Playdatelogo-stacked-yellow.jpg"
+  },
+  {
+    "name": "HyperX",
+    "url": "https://hyperx.com/",
+    "image": "https://adamxu.net/counterspell/hyperx.png"
   }
 ]
