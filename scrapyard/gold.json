@@ -1,7 +1,12 @@
 [
   {
-    "name": "This Could Be Your Company",
-    "url": "#",
-    "image": "https://adamxu.net/counterspell/eyes.png"
+    "name": "AWS",
+    "url": "https://aws.amazon.com/",
+    "image": "https://adamxu.net/counterspell/AWS%20Logo.png"
+  },
+  {
+    "name": "CloudZero",
+    "url": "https://www.cloudzero.com/",
+    "image": "https://wiki.tripwireinteractive.com/TWIimages/4/47/Placeholder.png"
   }
 ]
