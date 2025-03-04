@@ -3,5 +3,10 @@
     "name": "LaunchX",
     "url": "https://www.launchx.com/",
     "image": "https://cdn.hack.ngo/slackcdn/fe2938037f2d1caace359d657857092d.png"
+  },
+  {
+    "name": "MalwareBytes",
+    "url": "https://malwarebytes.com/",
+    "image": "https://cdn.hack.ngo/slackcdn/f6b6610b74a61d562a8db284e3d7697a.png"
   }
 ]
