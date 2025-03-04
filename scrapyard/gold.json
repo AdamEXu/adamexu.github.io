@@ -18,5 +18,10 @@
     "name": "Sumo Logic",
     "url": "https://sumologic.com/",
     "image": "https://adamxu.net/counterspell/SumoLogic_Logo_SumoBlue_RGB_@2x.png"
+  },
+  {
+    "name": "X-Camp",
+    "url": "https://x-camp.academy/",
+    "image": "https://cdn.fluff.pw/slackcdn/bbc4ac9240d0b3881328ee0269452c63.png"
   }
 ]
