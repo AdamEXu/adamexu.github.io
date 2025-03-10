@@ -1,10 +1,35 @@
 [
   {
-    "day": "what a fun event",
+    "day": "Saturday",
     "events": [
       {
-        "time": "There is no event",
-        "event": "I ate the schedule"
+        "time": "9:00 AM",
+        "event": "Check-in Begins & Breakfast"
+      },
+      {
+        "time": "10:00 AM",
+        "event": "Opening Ceremony"
+      },
+      {
+        "time": "10:00 PM",
+        "event": "Everyone out"
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "events": [
+      {
+        "time": "9:00 AM",
+        "event": "Doors Open Again & Breakfast"
+      },
+      {
+        "time": "10:30 AM",
+        "event": "Closing Ceremony & Prizes"
+      },
+      {
+        "time": "11:30 AM",
+        "event": "Everyone out & Clean up"
       }
     ]
   }
