@@ -1,6 +1,6 @@
 [
   {
-    "day": "Saturday",
+    "day": "Schedule",
     "events": [
       {
         "time": "9:00 AM",
@@ -11,24 +11,19 @@
         "event": "Opening Ceremony"
       },
       {
-        "time": "10:00 PM",
-        "event": "Everyone out"
-      }
-    ]
-  },
-  {
-    "day": "Sunday",
-    "events": [
-      {
-        "time": "9:00 AM",
-        "event": "Doors Open Again & Breakfast"
+        "time": "12:00 PM",
+        "event": "Lunch"
       },
       {
-        "time": "10:30 AM",
+        "time": "8:00 PM",
+        "event": "Submissions Close & Dinner"
+      },
+      {
+        "time": "9:00 PM",
         "event": "Closing Ceremony & Prizes"
       },
       {
-        "time": "11:30 AM",
+        "time": "11:00 PM",
         "event": "Everyone out & Clean up"
       }
     ]
